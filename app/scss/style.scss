@@ -6,55 +6,133 @@
 
 // --- Header ---
 .header {
-		&__top {
-      padding-top: 15px;
-      padding-bottom: 12px;
-      display: flex;
-      justify-content: space-between;
-		}
-		&__logo {
-      width: 175px;
-		}
-		&__phone {
-      padding-left: 10px;
-      @extend %montserrat-500;
-      color: $dark;
-      border-left: 1px solid #000;
-      position: relative;
-      & span {
-        @extend %montserrat-400;
-      }
-      &::before {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        left: -48px;
-        content: '';
-        width: 35px;
-        height: 35px;
-        background-image: url(../images/phone-ringing.svg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-      }
-		}
-		&__menu {
-      padding: 40px 124px;
-      background-color: $accent;
-		}
-		&__menu-list {
-      display: flex;
-      justify-content: space-between;
-		}
-		&__menu-item {
-      
-		}
-		&__menu-link {
-      @extend %montserrat-500;
-		}
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  &__top {
+    padding-top: 15px;
+    padding-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__logo {
+    width: 175px;
+  }
+  &__phone {
+    padding-left: 10px;
+    @extend %montserrat-500;
+    color: $dark;
+    border-left: 1px solid #000;
+    position: relative;
+    & span {
+      @extend %montserrat-400;
+    }
+    &::before {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -48px;
+      content: '';
+      width: 35px;
+      height: 35px;
+      background-image: url(../images/phone-ringing.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+  &__menu {
+    padding: 40px 124px;
+    background-color: $accent;
+    background-position: top;
+  }
+  &__menu-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__menu-item {
+
+  }
+  &__menu-link {
+    @extend %montserrat-400;
+  }
 }
 
+// --- top ---
+.top {
+  padding-top: 120px;
+  margin-top: 115px;
+  background-image: url(../images/top_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 35%;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between; 
+  }
+  &__content {
+    padding: 56px 42px 56px 151px;
+    margin-top: 50px;
+    margin-right: 29px;
+    background: rgba(0, 0, 0, 0.35);
+  }
+  &__title {
 
+  }
+  &__subtitle {
+    @extend %montserrat-400;
+    color: $light;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+  }
+  &__form {
+    background-color: $light;
+    margin-right: 150px;
+  }
+  &__form-title {
+    padding-top: 28px;
+    padding-bottom: 21px;
+    color: $light;
+    text-align: center;
+    background-color: $accent;
+  }
+  &__form-inner {
+    padding: 45px 93px 53px 93px;
+  }
+  &__form-label {
+    margin-bottom: 27px;
+    display: block;
+    text-transform: uppercase;
+    color: $accent;
+
+  }
+  &__form-input,
+  &__form-textarea {
+    display: block;
+    padding: 9px 18px;
+    margin-top: 5px;
+    &::placeholder {
+      @extend %montserrat-400;
+      color: rgba(0, 0, 0, 0.5);
+    }
+  }
+  &__form-textarea {
+    resize: none;
+    width: 100%;
+    height: 58px;
+  }
+  &__form-submit {
+    display: block;
+    font-size: 24px;
+    color: $light;
+    width: 100%;
+    padding: 10px;
+    text-transform: uppercase;
+    background-color: $accent;
+    border: none;
+  }
+}
 
 
 
