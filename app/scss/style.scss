@@ -4,6 +4,55 @@
 @import 'libs';
 @import 'global';
 
+// --- Header ---
+.header {
+		&__top {
+      padding-top: 15px;
+      padding-bottom: 12px;
+      display: flex;
+      justify-content: space-between;
+		}
+		&__logo {
+      width: 175px;
+		}
+		&__phone {
+      padding-left: 10px;
+      @extend %montserrat-500;
+      color: $dark;
+      border-left: 1px solid #000;
+      position: relative;
+      & span {
+        @extend %montserrat-400;
+      }
+      &::before {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -48px;
+        content: '';
+        width: 35px;
+        height: 35px;
+        background-image: url(../images/phone-ringing.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+		}
+		&__menu {
+      padding: 40px 124px;
+      background-color: $accent;
+		}
+		&__menu-list {
+      display: flex;
+      justify-content: space-between;
+		}
+		&__menu-item {
+      
+		}
+		&__menu-link {
+      @extend %montserrat-500;
+		}
+}
 
 
 
