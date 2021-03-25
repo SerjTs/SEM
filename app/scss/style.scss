@@ -180,6 +180,70 @@
   }
 }
 
+// --- Наши преимущества ---
+.advantages {
+  background-color: $bg-light;
+  overflow: hidden;
+  &__title {
+  }
+  &__subtitle {
+    margin-bottom: 95px;
+    max-width: 1020px;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 33%;
+  }
+  &__items {
+    width: 96%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__item {
+    width: 47%;
+  }
+  &__item-img {
+    width: 83px;
+    height: 83px;
+    margin-bottom: 13px;
+  }
+  &__item-title {
+    @extend %montserrat-600;
+  }
+  &__item-text {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  &__item-box {
+    margin-left: 40px;
+    min-height: 472px;
+    padding: 38px;
+    border: 2px solid $accent;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      top: -80px;
+      left: 42px;
+      height: 363px;
+      width: 541px;
+      background-image: url(../images/advantages5.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+  }
+  &__item-subtitle {
+    margin-top: 311px;
+    font-size: 18px;
+    color: $accent;
+  }
+}
+
+
+
 
 
 @import 'media';
