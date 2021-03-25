@@ -31,7 +31,6 @@ section {
 h1,
 h2,
 h3 {
-  @extend %montserrat-600;
   line-height: 1.22;
   margin-bottom: 10px;
 }
@@ -43,14 +42,17 @@ h1 {
 }
 
 h2 {
+  @extend %montserrat-600;
   font-size: 30px;
 }
 
 h3 {
+  @extend %montserrat-400;
   font-size: 24px;
 }
 
 h4 {
+  @extend %montserrat-400;
   font-size: 18px;
 }
 

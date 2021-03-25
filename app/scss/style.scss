@@ -52,7 +52,6 @@
     justify-content: space-between;
   }
   &__menu-item {
-
   }
   &__menu-link {
     @extend %montserrat-400;
@@ -72,13 +71,13 @@
     justify-content: space-between; 
   }
   &__content {
-    padding: 56px 42px 56px 151px;
+    padding: 56px 42px;
     margin-top: 50px;
     margin-right: 29px;
+    min-height: 451px;
     background: rgba(0, 0, 0, 0.35);
   }
   &__title {
-
   }
   &__subtitle {
     @extend %montserrat-400;
@@ -131,6 +130,53 @@
     text-transform: uppercase;
     background-color: $accent;
     border: none;
+  }
+}
+
+// --- О компании ---
+.about {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 50%;
+  }
+  &__left {
+    margin-right: 60px;
+    max-width: 649px;
+  }
+  &__left-subtitle {
+    margin-bottom: 15px;
+    & span {
+      @extend %montserrat-600;
+      color: $accent;
+    }
+  }
+  &__left-title {
+    margin-bottom: 50px;
+  }
+  &__left-img {
+    width: 100%;
+  }
+  &__right {
+    max-width: 588px;
+  }
+  &__right-img {
+    width: 100%;
+    margin-bottom: 70px;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 129px;
+      left: -128px;
+      height: 357px;
+      width: 565px;
+      border: 2px solid $accent;
+    }
+  }
+  &__right-text {
+    @extend %montserrat-600;
+    font-size: 18px;
   }
 }
 
