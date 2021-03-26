@@ -82,15 +82,15 @@
           <div class="top__form-inner">
             <label class="top__form-label">
               Имя
-              <input type="text" class="top__form-input" placeholder="Иван">
+              <input type="text" class="top__form-input" placeholder="Иван" required>
             </label>
             <label class="top__form-label">
               e-mail
-              <input type="email" class="top__form-input" placeholder="ivanov@mail.ru">
+              <input type="email" class="top__form-input" placeholder="ivanov@mail.ru" required>
             </label>
             <label class="top__form-label">
               телефон
-              <input type="tel" class="top__form-input" placeholder="+7 916-500-18-18">
+              <input type="tel" class="top__form-input" placeholder="+7 916-500-18-18" required>
             </label>
             <label class="top__form-label">
               комментарии
@@ -227,7 +227,6 @@
               </h3>
             </div>
           </div>
-
           <div class="services__item">
             <div href="#" class="services__item-img">
               <img src="images/services2.jpg" alt="Ремонт сантехники">
@@ -246,7 +245,6 @@
               </h3>
             </div>
           </div>
-
           <div class="services__item">
             <div href="#" class="services__item-img">
               <img src="images/services3.jpg" alt="Мастер на час">
@@ -265,7 +263,6 @@
               </h3>
             </div>
           </div>
-
           <div class="services__item">
             <div href="#" class="services__item-img">
               <img src="images/services4.jpg" alt="Ремонт квартир">
@@ -284,7 +281,6 @@
               </h3>
             </div>
           </div>
-
           <div class="services__item">
             <div href="#" class="services__item-img">
               <img src="images/services5.jpg" alt="Ремонт бытовой техники">
@@ -303,7 +299,6 @@
               </h3>
             </div>
           </div>
-
           <div class="services__item">
             <div href="#" class="services__item-img">
               <img src="images/services6.jpg" alt="Ремонт цифровой техники">
@@ -322,7 +317,36 @@
               </h3>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- Форма заявки со скидкой -->
+    <section class="discount">
+      <div class="container">
+        <div class="discount__wrapper">
+          <h2 class="discount__title">
+            Вы новый клиент?<br>
+            Вам <span>скидка 10%</span>
+          </h2>
+          <form action="#" class="discount__form">
+            <div class="discount__form-inner">
+              <label class="discount__form-label">
+                Имя
+                <input type="text" class="discount__form-input" placeholder="Иван" required>
+              </label>
+              <label class="discount__form-label">
+                Телефон
+                <input type="email" class="discount__form-input" placeholder="ivanov@mail.ru" required>
+              </label>
+              <input class="discount__form-submit link-btn" type="submit" value="Отправить">
+            </div>
+            <label class="discount__form-check-label">
+              <input class="discount__form-checkbox" type="checkbox" required>
+              <span class="discount__form-check-style"></span>
+              Я прочитал и согласен с обработкой данных
+            </label>
+          </form>
         </div>
       </div>
     </section>

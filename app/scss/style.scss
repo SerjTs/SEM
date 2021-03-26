@@ -297,6 +297,82 @@
   }
 }
 
+// --- Форма заявки со скидкой ---
+.discount {
+  padding: 82px 150px 37px;
+  background-image: url(../images/discount__bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    color: $light;
+    max-width: 394px;
+    width: 100%;
+    & span {
+      color: $accent;
+      @extend %montserrat-900;
+    }
+  }
+  &__form {
+    flex-grow: 1;
+    // margin-left: ;
+  }
+  &__form-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 100px;
+  }
+  &__form-label {
+    color: $accent;
+    text-transform: uppercase;
+  }
+  &__form-input {
+    margin-top: 4px;
+    padding: 8px 20px;
+    height: 40px;
+    width: 280px;
+    display: block;
+  }
+  &__form-submit {
+    color: $light;
+    text-transform: uppercase;
+  }
+  &__form-check-label {
+    color: rgba(255, 255, 255, 0.75);
+    @extend %montserrat-400;
+    display: block;
+    text-align: right;
+  }
+  &__form-checkbox {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    clip: rect(0 0 0 0);
+    padding-right: 25px;
+  }
+  &__form-check-style {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border: none;
+    background-color: #fff;
+    margin-top: 1px;
+    margin-left: -25px;
+  }
+  &__form-checkbox:checked + &__form-check-style {
+    background-image: url(../images/check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+
 
 
 
