@@ -56,9 +56,6 @@
   &__menu-on span {
     background: rgba(50,50,50,.0);
   }
-
-
-
   &__phone {
     padding-left: 10px;
     @extend %montserrat-500;
@@ -157,7 +154,7 @@
     background-color: $accent;
   }
   &__form-inner {
-    padding: 45px 93px 53px 93px;
+    padding: 45px 93px 53px;
   }
   &__form-label {
     margin-bottom: 27px;
