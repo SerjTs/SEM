@@ -19,6 +19,46 @@
   &__logo {
     width: 175px;
   }
+  &__menu-btn {
+    display: none;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    & span {
+      top: 50%;
+      right: 0px;
+      &::before {
+        top: 13px;
+      }
+      &::after {
+        bottom: 13px;
+      }
+      &, &::before, &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        background: rgba(50,50,50,1);
+        height: 5px;
+        width: 100%;
+        transition: all .3s ease-in-out;
+      }
+    }
+  }
+  &__menu-on span::after {
+    transform: rotate(-45deg);
+    bottom: 0px;
+  }
+  &__menu-on span::before {
+    transform: rotate(45deg);
+    top: 0px;
+  }
+  &__menu-on span {
+    background: rgba(50,50,50,.0);
+  }
+
+
+
   &__phone {
     padding-left: 10px;
     @extend %montserrat-500;
@@ -27,6 +67,17 @@
     position: relative;
     & span {
       @extend %montserrat-400;
+    }
+    &:hover {
+      @extend %montserrat-600;
+      letter-spacing: -0.14px;
+      & span {
+        @extend %montserrat-600;
+        letter-spacing: -0.20px;
+      }
+    }
+    &:active {
+      color: $bg-light;
     }
     &::before {
       position: absolute;
@@ -113,7 +164,6 @@
     display: block;
     text-transform: uppercase;
     color: $accent;
-
   }
   &__form-input,
   &__form-textarea {

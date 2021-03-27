@@ -1,3 +1,51 @@
-@media (max-width: 1100px) {
+@media (max-width: 1000px) {
+  .header {
+    &__menu {
+      display: inline-block;
+      padding: 40px 16px 15px;
+    }
+    &__menu-list {
+      display: flex;
+      flex-direction: column;
+    }   
+    &__menu-item {
+      margin-bottom: 25px;
+    }
+  }
   
+}
+
+
+@media (max-width: 450px) {
+  .header {
+    &__top {
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
+    &__logo {
+      align-self: flex-start;
+    }
+    &__menu-btn {
+      display: block;
+      position: absolute;
+      top: 10px;
+      right: 0;
+    }
+    &__phone {
+      margin: 10px 0 5px 30px;
+    }
+    &__menu {
+      display: flex;
+      justify-content: center;
+      transform: translateX(-120%);
+      transition: all .6s;
+    }
+    &__menu--visible {
+      transform: translateX(0);
+    }
+    &__menu__list {
+
+    }
+  }
 }
