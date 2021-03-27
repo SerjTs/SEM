@@ -74,4 +74,11 @@ a {
   font-size: 14px;
   text-align: center;
   min-width: 182px;
+  transition: .3s;
+  &:hover {
+    transform: scale(1.05);
+  }
+  &:active {
+    transform: scale(1);
+  }
 }

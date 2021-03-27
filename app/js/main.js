@@ -1,7 +1,7 @@
 $(function() {
 
 // smooth scroll
-  $(".header__menu-link").on("click", function (event) {
+  $(".header__menu-link, .footer__menu-link, .header__logo, .footer__logo").on("click", function (event) {
     event.preventDefault();
     var id = $(this).attr('href'),
       top = $(id).offset().top;
