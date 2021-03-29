@@ -202,11 +202,11 @@
   &__wrapper {
     display: flex;
     justify-content: space-between;
-    flex-basis: 50%;
   }
   &__left {
-    margin-right: 60px;
+    margin-right: 4%;
     max-width: 649px;
+    flex-basis: 50%;
   }
   &__left-subtitle {
     margin-bottom: 15px;
@@ -216,6 +216,7 @@
     }
   }
   &__left-title {
+    max-width: 89%;
     margin-bottom: 50px;
   }
   &__left-img {
@@ -223,6 +224,7 @@
   }
   &__right {
     max-width: 588px;
+    flex-basis: 50%;
   }
   &__right-img {
     width: 100%;
@@ -231,10 +233,10 @@
     &::before {
       content: '';
       position: absolute;
-      top: 129px;
-      left: -128px;
-      height: 357px;
-      width: 565px;
+      top: 33%;
+      left: -20%;
+      height: 80%;
+      width: 95%;
       border: 2px solid $accent;
     }
   }
@@ -286,21 +288,39 @@
     margin-bottom: 50px;
     border: 2px solid $accent;
     position: relative;
-    &::after {
-      content: '';
-      position: absolute;
-      top: -80px;
-      left: 42px;
-      height: 363px;
-      width: 541px;
-      background-image: url(../images/advantages5.jpg);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
-    }
+    // &::after {
+      // content: '';
+      // position: absolute;
+      // top: -80px;
+      // left: 42px;
+      // height: 363px;
+      // width: 541px;
+      // width: 105%;
+      // background-image: url(../images/advantages5.jpg);
+      // background-repeat: no-repeat;
+      // background-position: center;
+      // background-size: contain;
+    // }
+  }
+  &__item-img-box {
+    position: relative;
+    // border: 1px solid #000;
+  }
+  &__item-img-box img {
+    // position: absolute;
+    // height: 363px;
+    // width: 541px;
+    object-fit: contain;
+    // right: 0;
+    // left: 0;
+    margin-top: -110px;
+    margin-right: -100px;
+    // margin-left: 40px;
+    max-width: 541px;
+    max-width: 140%;
   }
   &__item-subtitle {
-    margin-top: 280px;
+    margin-top: 30px;
     margin-bottom: 20px;
     font-size: 18px;
     color: $accent;
