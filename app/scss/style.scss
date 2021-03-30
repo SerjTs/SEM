@@ -360,6 +360,10 @@
     position: relative;
     &:hover .services__item-link-box {
       opacity: 1;
+    }
+    & img {
+      width: 100%;
+      object-fit: contain;
     }  
   }
   &__item-link {
@@ -383,7 +387,7 @@
 
 // --- Форма заявки со скидкой ---
 .discount {
-  padding: 82px 150px 37px;
+  padding: 82px 0 37px;
   background-image: url(../images/discount__bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -394,8 +398,9 @@
   }
   &__title {
     color: $light;
-    max-width: 394px;
+    max-width: 370px;
     width: 100%;
+    margin-right: 2%;
     & span {
       color: $accent;
       @extend %montserrat-900;
