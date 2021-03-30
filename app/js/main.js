@@ -18,20 +18,20 @@ $(function() {
     infinite: false,
     // autoplay: true,
     // autoplaySpeed: 4000,
-    //responsive: [
-    //  {
-    //    breakpoint: 500,
-    //    settings: {
-    //      slidesToShow: 1,
-    //      slidesToScroll: 1
-    //    }
-    //  }
-    //]
+    responsive: [
+     {
+       breakpoint: 700,
+       settings: {
+         slidesToShow: 1,
+         slidesToScroll: 1
+       }
+     }
+    ]
   });
 
   $(".feedbacks__slide-rating").rateYo({
     rating: 5,
-    spacing: "13px",
+    spacing: "10px",
     readOnly: true,
     // numStars: 5,
     // minValue: 0,
